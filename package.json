@@ -1,0 +1,26 @@
+{
+  "name": "webtask",
+  "version": "1.0.0",
+  "description": "A naive implementation of webtask to show a fwend.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makenova/webtask.git"
+  },
+  "keywords": [
+    "webtask"
+  ],
+  "author": "makenova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makenova/webtask/issues"
+  },
+  "homepage": "https://github.com/makenova/webtask",
+  "dependencies": {
+    "request": "^2.55.0"
+  }
+}

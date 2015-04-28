@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Naive Webtask</title>
+</head>
+<body>
+	<form action="http://webtask.makenova.com/" method="post">
+		<input type="text" id="input" name="input">
+		<input type="submit" id="submit" value="Transform">
+	</form>
+	<p id="output"></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+		$('#submit').on('click', function(e){
+			e.preventDefault();
+			var input = $('#input').val();
+			$.post('http://localhost:6969/', {input: input, hash: 'be36b919879c03785ec7'})
+				.done(function(data){
+					$('#output').text(data.result);
+				})
+				.fail(function(data){
+					console.log('oops');
+				})
+		});
+	</script>
+</body>
+</html>
